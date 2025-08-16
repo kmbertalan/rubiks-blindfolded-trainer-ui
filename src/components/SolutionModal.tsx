@@ -7,6 +7,7 @@ interface SolutionModalProps {
   onClose: () => void;
   scramble: string;
   onSubmit: (moves: string) => void;
+  handleRawSolution: (edgeSolution: string, cornerSolution: string) => void;
 }
 
 const SolutionModal: React.FC<SolutionModalProps> = ({
@@ -14,6 +15,7 @@ const SolutionModal: React.FC<SolutionModalProps> = ({
   onClose,
   scramble,
   onSubmit,
+  handleRawSolution,
 }) => {
   const [edgeInput, setEdgeInput] = useState("");
   const [cornerInput, setCornerInput] = useState("");
@@ -23,6 +25,8 @@ const SolutionModal: React.FC<SolutionModalProps> = ({
       alert("Please generate a scramble first!");
       return;
     }
+
+    handleRawSolution(edgeInput, cornerInput);
 
     const convertedMoveList: string[] = [];
 
