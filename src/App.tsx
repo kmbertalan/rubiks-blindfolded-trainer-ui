@@ -36,13 +36,25 @@ function App() {
       <h1>Cube Viewer</h1>
       <button onClick={() => setShowScrambleModal(true)}>Get Scramble</button>
       <button
-        onClick={() => setShowSolutionModal(true)}
+        onClick={() => {
+          setAlgorithm(scramble);
+          setShowSolutionModal(true);
+        }}
         disabled={!scramble}
         style={{ marginLeft: "1rem" }}
       >
         Solve Cube
       </button>
-      <CubeViewer algorithm={algorithm} />
+      <div style={{ display: "flex", gap: "2rem" }}>
+        <div>
+          Scramble
+          <CubeViewer algorithm={scramble} />
+        </div>
+        <div>
+          Solution
+          <CubeViewer algorithm={algorithm} />
+        </div>
+      </div>
       <ScrambleModal
         onSubmit={handleScrambleSubmit}
         onClose={() => setShowScrambleModal(false)}
