@@ -2,6 +2,12 @@ export const parity = "R U R' F' R U2 R' U2 R' F R U R U2 R' U' ";
 
 export const cornerSwap = "R U' R' U' R U R' F' R U R' U' R' F R";
 
+export const orientationMoves: Record<string, string> = {
+  x: "r L'",
+  y: "u D'",
+  z: "f B'",
+};
+
 export const edgeMoves: Record<string, string> = {
   A: "U' R' U L' U2 R U' R' U2 R L",
   B: "",

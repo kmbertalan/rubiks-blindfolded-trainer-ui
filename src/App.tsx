@@ -1,12 +1,10 @@
 import { useState } from "react";
-import CubeViewer from "./components/CubeViewer";
 import ScrambleModal from "./components/ScrambleModal";
 import SolutionModal from "./components/SolutionModal";
-
-type RawSolution = {
-  readonly edgeSolution: string;
-  readonly cornerSolution: string;
-};
+import { orientationMoves } from "./constants";
+import OrientationControls from "./components/OrientationControl";
+import CubeControls from "./components/CubeControls";
+import RawSolution from "./components/RawSolution";
 
 function App() {
   const [algorithm, setAlgorithm] = useState("");
@@ -14,16 +12,16 @@ function App() {
   const [rawSolution, setRawSolution] = useState<RawSolution | null>(null);
   const [showScrambleModal, setShowScrambleModal] = useState(false);
   const [showSolutionModal, setShowSolutionModal] = useState(false);
+  const [orientation, setOrientation] = useState("");
 
   const handleScrambleSubmit = (scr: string) => {
-    setAlgorithm(scr);
     setRawSolution(null);
     setScramble(scr);
     setShowScrambleModal(false);
   };
 
   const handleSolutionSubmit = (solution: string) => {
-    setAlgorithm((prev) => `${prev} ${solution}`);
+    setAlgorithm(solution);
     setShowSolutionModal(false);
   };
 
@@ -31,30 +29,33 @@ function App() {
     setRawSolution({ edgeSolution, cornerSolution });
   };
 
+  const addOrientation = (move: string) => {
+    setOrientation((prev) => `${prev} ${orientationMoves[move]}`);
+  };
+
+  const resetOrientation = () => {
+    setOrientation("");
+  };
+
+  const resetCube = () => {
+    setAlgorithm("");
+    setScramble("");
+    setRawSolution(null);
+    setOrientation("");
+  };
+
   return (
     <div style={{ padding: "2rem", textAlign: "center" }}>
-      <h1>Cube Viewer</h1>
-      <button onClick={() => setShowScrambleModal(true)}>Get Scramble</button>
-      <button
-        onClick={() => {
-          setAlgorithm(scramble);
-          setShowSolutionModal(true);
-        }}
-        disabled={!scramble}
-        style={{ marginLeft: "1rem" }}
-      >
-        Solve Cube
-      </button>
-      <div style={{ display: "flex", gap: "2rem" }}>
-        <div>
-          Scramble
-          <CubeViewer algorithm={scramble} />
-        </div>
-        <div>
-          Solution
-          <CubeViewer algorithm={algorithm} />
-        </div>
-      </div>
+      <h1>Blind Cube Trainer</h1>
+      <OrientationControls onAdd={addOrientation} onReset={resetOrientation} />
+      <CubeControls
+        scramble={scramble}
+        algorithm={algorithm}
+        orientation={orientation}
+        setShowScrambleModal={setShowScrambleModal}
+        setShowSolutionModal={setShowSolutionModal}
+        resetCube={resetCube}
+      />
       <ScrambleModal
         onSubmit={handleScrambleSubmit}
         onClose={() => setShowScrambleModal(false)}
@@ -67,13 +68,7 @@ function App() {
         scramble={scramble}
         handleRawSolution={handleRawSolution}
       />
-      {scramble && <p>Current scramble: {scramble}</p>}
-      {rawSolution && (
-        <p>Your solution for edges: {rawSolution.edgeSolution}</p>
-      )}
-      {rawSolution && (
-        <p>Your solution for corners: {rawSolution.cornerSolution}</p>
-      )}
+      <RawSolution rawSolution={rawSolution} />
     </div>
   );
 }
