@@ -45,7 +45,16 @@ function App() {
   };
 
   return (
-    <div style={{ padding: "2rem", textAlign: "center" }}>
+    <div
+      style={{
+        padding: "2rem",
+        textAlign: "center",
+        backgroundColor: "#FAEDCD",
+        width: "100vw",
+        height: "100vh",
+        boxSizing: "border-box",
+      }}
+    >
       <h1>Blind Cube Trainer</h1>
       <OrientationControls onAdd={addOrientation} onReset={resetOrientation} />
       <CubeControls

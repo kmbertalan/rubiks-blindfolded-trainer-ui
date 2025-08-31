@@ -19,21 +19,41 @@ function CubeControls({
 }: CubeControlsProps) {
   return (
     <>
-      <button onClick={() => setShowScrambleModal(true)}>Get Scramble</button>
       <button
-        onClick={() => {
+        onClick={(e) => {
+          setShowScrambleModal(true);
+          (e.target as HTMLButtonElement).blur();
+        }}
+      >
+        Get Scramble
+      </button>
+      <button
+        onClick={(e) => {
           setShowSolutionModal(true);
+          (e.target as HTMLButtonElement).blur();
         }}
         disabled={!scramble}
         style={{ marginLeft: "1rem" }}
       >
         Solve Cube
       </button>
-      <button onClick={resetCube} style={{ marginLeft: "1rem" }}>
+      <button
+        onClick={(e) => {
+          resetCube();
+          (e.target as HTMLButtonElement).blur();
+        }}
+        style={{ marginLeft: "1rem" }}
+      >
         Reset Cube
       </button>
-      {scramble && <p>Current scramble: {scramble}</p>}
-      <div style={{ display: "flex", gap: "2rem" }}>
+      <p>Current scramble: {scramble}</p>
+      <div
+        style={{
+          display: "flex",
+          gap: "2rem",
+          justifyContent: "center",
+        }}
+      >
         <div>
           Scramble
           <CubeViewer algorithm={`${scramble} ${orientation}`} />

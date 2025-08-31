@@ -25,7 +25,7 @@ const CubeViewer: React.FC<CubeViewerProps> = ({ algorithm, size = 400 }) => {
   return React.createElement("twisty-player", {
     ref: cubeRef,
     "control-panel": "none",
-    background: "checkered-transparent",
+    background: "none",
     style: { width: `${size}px`, height: `${size}px` },
     alg: algorithm,
   });
