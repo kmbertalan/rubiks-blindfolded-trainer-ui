@@ -1,83 +1,26 @@
-import { useState } from "react";
-import ScrambleModal from "./components/ScrambleModal";
-import SolutionModal from "./components/SolutionModal";
-import { orientationMoves } from "./constants";
-import OrientationControls from "./components/OrientationControl";
-import CubeControls from "./components/CubeControls";
-import RawSolution from "./components/RawSolution";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import TrainerPage from "./pages/TrainerPage";
+import FeedbackPage from "./pages/FeedbackPage";
+import "./App.css";
 
 function App() {
-  const [algorithm, setAlgorithm] = useState("");
-  const [scramble, setScramble] = useState("");
-  const [rawSolution, setRawSolution] = useState<RawSolution | null>(null);
-  const [showScrambleModal, setShowScrambleModal] = useState(false);
-  const [showSolutionModal, setShowSolutionModal] = useState(false);
-  const [orientation, setOrientation] = useState("");
-
-  const handleScrambleSubmit = (scr: string) => {
-    setRawSolution(null);
-    setScramble(scr);
-    setShowScrambleModal(false);
-  };
-
-  const handleSolutionSubmit = (solution: string) => {
-    setAlgorithm(solution);
-    setShowSolutionModal(false);
-  };
-
-  const handleRawSolution = (edgeSolution: string, cornerSolution: string) => {
-    setRawSolution({ edgeSolution, cornerSolution });
-  };
-
-  const addOrientation = (move: string) => {
-    setOrientation((prev) => `${prev} ${orientationMoves[move]}`);
-  };
-
-  const resetOrientation = () => {
-    setOrientation("");
-  };
-
-  const resetCube = () => {
-    setAlgorithm("");
-    setScramble("");
-    setRawSolution(null);
-    setOrientation("");
-  };
-
   return (
-    <div
-      style={{
-        padding: "2rem",
-        textAlign: "center",
-        backgroundColor: "#FAEDCD",
-        width: "100vw",
-        height: "100vh",
-        boxSizing: "border-box",
-      }}
-    >
-      <h1>Blind Cube Trainer</h1>
-      <OrientationControls onAdd={addOrientation} onReset={resetOrientation} />
-      <CubeControls
-        scramble={scramble}
-        algorithm={algorithm}
-        orientation={orientation}
-        setShowScrambleModal={setShowScrambleModal}
-        setShowSolutionModal={setShowSolutionModal}
-        resetCube={resetCube}
-      />
-      <ScrambleModal
-        onSubmit={handleScrambleSubmit}
-        onClose={() => setShowScrambleModal(false)}
-        isOpen={showScrambleModal}
-      />
-      <SolutionModal
-        onSubmit={handleSolutionSubmit}
-        onClose={() => setShowSolutionModal(false)}
-        isOpen={showSolutionModal}
-        scramble={scramble}
-        handleRawSolution={handleRawSolution}
-      />
-      <RawSolution rawSolution={rawSolution} />
+    <div className="app-container">
+      <Router>
+        <nav className="navbar">
+          <Link to="/" className="nav-link">
+            Trainer
+          </Link>
+          <Link to="/feedback" className="nav-link">
+            Feedback
+          </Link>
+        </nav>
+
+        <Routes>
+          <Route path="/" element={<TrainerPage />} />
+          <Route path="/feedback" element={<FeedbackPage />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
