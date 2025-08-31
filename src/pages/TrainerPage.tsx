@@ -4,12 +4,12 @@ import SolutionModal from "../components/SolutionModal";
 import { orientationMoves } from "../constants";
 import OrientationControls from "../components/OrientationControl";
 import CubeControls from "../components/CubeControls";
-import RawSolution from "../components/RawSolution";
+import RawSolution, { type RawSolutionType } from "../components/RawSolution";
 
 function TrainerPage() {
   const [algorithm, setAlgorithm] = useState("");
   const [scramble, setScramble] = useState("");
-  const [rawSolution, setRawSolution] = useState<RawSolution | null>(null);
+  const [rawSolution, setRawSolution] = useState<RawSolutionType | null>(null);
   const [showScrambleModal, setShowScrambleModal] = useState(false);
   const [showSolutionModal, setShowSolutionModal] = useState(false);
   const [orientation, setOrientation] = useState("");
