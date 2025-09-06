@@ -7,9 +7,12 @@ export default function FeedbackPage() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    setLoading(true);
 
     const templateParams = { title, name, email, message };
 
@@ -31,7 +34,10 @@ export default function FeedbackPage() {
         (error) => {
           alert("Oops! Something went wrong." + error);
         }
-      );
+      )
+      .finally(() => {
+        setLoading(false);
+      });
   };
 
   return (
@@ -71,9 +77,10 @@ export default function FeedbackPage() {
           />
           <button
             type="submit"
+            disabled={loading}
             onClick={(e) => (e.target as HTMLButtonElement).blur()}
           >
-            Send Feedback
+            {loading ? "Sending..." : "Send Feedback"}
           </button>
         </form>
       </div>
