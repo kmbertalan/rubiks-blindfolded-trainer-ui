@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import TrainerPage from "./pages/TrainerPage";
 import FeedbackPage from "./pages/FeedbackPage";
 import "./App.css";
+import HowToPage from "./pages/HowToPage";
 
 function App() {
   return (
@@ -11,6 +12,9 @@ function App() {
           <Link to="/" className="nav-link">
             Trainer
           </Link>
+          <Link to="/howTo" className="nav-link">
+            How To Use
+          </Link>
           <Link to="/feedback" className="nav-link">
             Feedback
           </Link>
@@ -18,6 +22,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<TrainerPage />} />
+          <Route path="/howTo" element={<HowToPage />} />
           <Route path="/feedback" element={<FeedbackPage />} />
         </Routes>
       </Router>

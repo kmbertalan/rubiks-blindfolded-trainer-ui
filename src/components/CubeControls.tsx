@@ -35,7 +35,7 @@ function CubeControls({
         disabled={!scramble}
         style={{ marginLeft: "1rem" }}
       >
-        Solve Cube
+        Enter Solution
       </button>
       <button
         onClick={(e) => {
@@ -46,7 +46,9 @@ function CubeControls({
       >
         Reset Cube
       </button>
-      <p>Current scramble: {scramble}</p>
+      <p>
+        Current scramble: <b>{scramble}</b>
+      </p>
       <div
         style={{
           display: "flex",
@@ -55,11 +57,11 @@ function CubeControls({
         }}
       >
         <div>
-          Scramble
+          <b>Scramble</b>
           <CubeViewer algorithm={`${scramble} ${orientation}`} />
         </div>
         <div>
-          Solution
+          <b>Solution</b>
           <CubeViewer algorithm={`${scramble} ${orientation} ${algorithm}`} />
         </div>
       </div>

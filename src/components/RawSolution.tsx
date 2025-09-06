@@ -16,7 +16,7 @@ function RawSolution({ rawSolution }: RawSolutionProps) {
     <div className="raw-solution">
       <div className="raw-solution__header">
         <div className="raw-solution__status-dot"></div>
-        <h3 className="raw-solution__title">Solution</h3>
+        <h3 className="raw-solution__title">Your Current Solution</h3>
       </div>
 
       <div className="raw-solution__content">

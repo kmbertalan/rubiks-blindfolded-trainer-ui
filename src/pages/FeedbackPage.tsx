@@ -58,10 +58,9 @@ export default function FeedbackPage() {
           />
           <input
             type="email"
-            placeholder="Your email"
+            placeholder="Your email (if you'd like a response)"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            required
           />
           <textarea
             placeholder="Message"

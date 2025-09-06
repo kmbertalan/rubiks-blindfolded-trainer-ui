@@ -15,6 +15,7 @@ function TrainerPage() {
   const [orientation, setOrientation] = useState("");
 
   const handleScrambleSubmit = (scr: string) => {
+    setAlgorithm("");
     setRawSolution(null);
     setScramble(scr);
     setShowScrambleModal(false);
