@@ -39,7 +39,8 @@ export default function FeedbackPage() {
       <div className="feedback-card">
         <h2>Send Feedback</h2>
         <p className="feedback-subtitle">
-          We value your input! Please fill out the form below.
+          We value your input! Please fill out the form below if you have any
+          suggestions or feedback.
         </p>
         <form onSubmit={handleSubmit} className="feedback-form">
           <input
