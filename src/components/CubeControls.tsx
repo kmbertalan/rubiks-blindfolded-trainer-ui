@@ -1,4 +1,5 @@
 import CubeViewer from "./CubeViewer";
+import "./CubeControls.css";
 
 type CubeControlsProps = {
   scramble: string;
@@ -28,40 +29,34 @@ function CubeControls({
         Get Scramble
       </button>
       <button
+        className="cube-controls__button--spaced"
         onClick={(e) => {
           setShowSolutionModal(true);
           (e.target as HTMLButtonElement).blur();
         }}
         disabled={!scramble}
-        style={{ marginLeft: "1rem" }}
       >
         Enter Solution
       </button>
       <button
+        className="cube-controls__button--spaced"
         onClick={(e) => {
           resetCube();
           (e.target as HTMLButtonElement).blur();
         }}
-        style={{ marginLeft: "1rem" }}
       >
         Reset Cube
       </button>
       <p>
         Current scramble: <b>{scramble}</b>
       </p>
-      <div
-        style={{
-          display: "flex",
-          gap: "2rem",
-          justifyContent: "center",
-        }}
-      >
+      <div className="cube-controls__cubes-container">
         <div>
-          <b>Scramble</b>
+          <b className="cube-controls__cube-label">Scramble</b>
           <CubeViewer algorithm={`${scramble} ${orientation}`} />
         </div>
         <div>
-          <b>Solution</b>
+          <b className="cube-controls__cube-label">Solution</b>
           <CubeViewer algorithm={`${scramble} ${orientation} ${algorithm}`} />
         </div>
       </div>

@@ -1,0 +1,13 @@
+.cube-controls__button--spaced {
+  margin-left: 1rem;
+}
+
+.cube-controls__cubes-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.cube-controls__cube-label {
+  font-weight: bold;
+}

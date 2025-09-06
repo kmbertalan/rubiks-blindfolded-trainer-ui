@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import "./CubeViewer.css";
 
 interface CubeViewerProps {
   algorithm: string;
@@ -22,10 +23,17 @@ const CubeViewer: React.FC<CubeViewerProps> = ({ algorithm, size = 400 }) => {
     }
   }, [algorithm]);
 
+  const getSizeClass = () => {
+    if (size <= 200) return "cube-viewer--size-small";
+    if (size <= 400) return "cube-viewer--size-medium";
+    return "cube-viewer--size-large";
+  };
+
   return React.createElement("twisty-player", {
     ref: cubeRef,
     "control-panel": "none",
     background: "none",
+    className: getSizeClass(),
     style: { width: `${size}px`, height: `${size}px` },
     alg: algorithm,
   });

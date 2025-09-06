@@ -1,26 +1,12 @@
+import "./HowToPage.css";
+
 function HowToPage() {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "row",
-        height: "100%",
-        padding: "1rem",
-        gap: "2rem",
-      }}
-    >
-      <div style={{ flex: 1, textAlign: "left" }}>
+    <div className="how-to-page">
+      <div className="how-to-page__content">
         <h3>How to Use Blind Cube Trainer</h3>
-        <div
-          style={{
-            background: "white",
-            border: "1px solid grey",
-            borderRadius: "1rem",
-            padding: "0 0.5rem",
-            marginBottom: "0.5rem",
-          }}
-        >
-          <p style={{ margin: "0.5rem" }}>
+        <div className="how-to-page__info-box">
+          <p className="how-to-page__info-text">
             {
               "Welcome! This app is designed to help you practice blindfold solving with the "
             }
@@ -31,7 +17,7 @@ function HowToPage() {
               Old Pochmann Method
             </a>
             .
-            <ul style={{ margin: 0 }}>
+            <ul className="how-to-page__info-list">
               <li>
                 For edges, the buffer is UR. We handle swaps with UL using a
                 T-perm.
@@ -44,47 +30,13 @@ function HowToPage() {
             </b>
           </p>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flex: 1,
-            position: "relative",
-            gap: "4rem",
-            justifyContent: "center",
-          }}
-        >
-          <img
-            src="/edge.png"
-            alt="Edge"
-            style={{
-              maxWidth: "100%",
-              maxHeight: "30vh",
-              borderRadius: "12px",
-              border: "2px solid #ccc",
-            }}
-          />
-          <img
-            src="/corner.png"
-            alt="Corner"
-            style={{
-              maxWidth: "100%",
-              maxHeight: "30vh",
-              borderRadius: "12px",
-              border: "2px solid #ccc",
-            }}
-          />
+        <div className="how-to-page__images-container">
+          <img src="/edge.png" alt="Edge" className="how-to-page__image" />
+          <img src="/corner.png" alt="Corner" className="how-to-page__image" />
         </div>
-        <div
-          style={{
-            background: "white",
-            border: "1px solid grey",
-            borderRadius: "1rem",
-            padding: "0 0.5rem",
-            marginTop: "0.5rem",
-          }}
-        >
-          <p style={{ marginBottom: "0" }}>Here’s how it works:</p>
-          <ol style={{ marginTop: "0" }}>
+        <div className="how-to-page__bottom-info">
+          <p className="how-to-page__bottom-text">Here's how it works:</p>
+          <ol className="how-to-page__steps-list">
             <li>
               <strong>Scramble:</strong> Set a scramble for practice.
             </li>
@@ -107,16 +59,11 @@ function HowToPage() {
         </div>
       </div>
 
-      <div style={{ flex: 1, position: "relative" }}>
+      <div className="how-to-page__screenshot-container">
         <img
           src="/screenshot_with_numbers.png"
           alt="App screenshot"
-          style={{
-            maxWidth: "100%",
-            maxHeight: "80vh",
-            borderRadius: "12px",
-            border: "2px solid #ccc",
-          }}
+          className="how-to-page__screenshot"
         />
       </div>
     </div>

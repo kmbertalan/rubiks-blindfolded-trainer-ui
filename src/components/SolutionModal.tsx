@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { edgeMoves, cornerMoves, parity } from "./../constants";
 import GenericModal from "./GenericModal";
+import "./SolutionModal.css";
 
 interface SolutionModalProps {
   isOpen: boolean;
@@ -65,20 +66,20 @@ const SolutionModal: React.FC<SolutionModalProps> = ({
         value={edgeInput}
         onChange={(e) => setEdgeInput(e.target.value)}
         placeholder="Edge solution"
-        style={{ width: "100%", padding: "0.5rem", marginBottom: "0.5rem" }}
+        className="solution-modal__input"
       />
       <input
         type="text"
         value={cornerInput}
         onChange={(e) => setCornerInput(e.target.value)}
         placeholder="Corner solution"
-        style={{ width: "100%", padding: "0.5rem", marginBottom: "1rem" }}
+        className="solution-modal__input solution-modal__input--last"
       />
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
-        <button onClick={onClose} style={{ padding: "0.5rem 1rem" }}>
+      <div className="solution-modal__buttons">
+        <button onClick={onClose} className="solution-modal__button">
           Cancel
         </button>
-        <button onClick={handleApply} style={{ padding: "0.5rem 1rem" }}>
+        <button onClick={handleApply} className="solution-modal__button">
           Apply
         </button>
       </div>

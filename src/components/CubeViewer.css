@@ -1,0 +1,14 @@
+.cube-viewer--size-small {
+  width: 200px;
+  height: 200px;
+}
+
+.cube-viewer--size-medium {
+  width: 400px;
+  height: 400px;
+}
+
+.cube-viewer--size-large {
+  width: 600px;
+  height: 600px;
+}

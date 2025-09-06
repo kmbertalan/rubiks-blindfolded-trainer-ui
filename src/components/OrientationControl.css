@@ -1,0 +1,12 @@
+.orientation-controls {
+  margin-bottom: 1rem;
+}
+
+.orientation-controls__label {
+  margin-right: 0.75rem;
+  font-weight: bold;
+}
+
+.orientation-controls__button--spaced {
+  margin-left: 0.5rem;
+}

@@ -1,0 +1,71 @@
+.how-to-page {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.how-to-page__content {
+  flex: 1;
+  text-align: left;
+}
+
+.how-to-page__info-box {
+  background: white;
+  border: 1px solid grey;
+  border-radius: 1rem;
+  padding: 0 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.how-to-page__info-text {
+  margin: 0.5rem;
+}
+
+.how-to-page__info-list {
+  margin: 0;
+}
+
+.how-to-page__images-container {
+  display: flex;
+  flex: 1;
+  position: relative;
+  gap: 4rem;
+  justify-content: center;
+}
+
+.how-to-page__image {
+  max-width: 100%;
+  max-height: 30vh;
+  border-radius: 12px;
+  border: 2px solid #ccc;
+}
+
+.how-to-page__bottom-info {
+  background: white;
+  border: 1px solid grey;
+  border-radius: 1rem;
+  padding: 0 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.how-to-page__bottom-text {
+  margin-bottom: 0;
+}
+
+.how-to-page__steps-list {
+  margin-top: 0;
+}
+
+.how-to-page__screenshot-container {
+  flex: 1;
+  position: relative;
+}
+
+.how-to-page__screenshot {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 12px;
+  border: 2px solid #ccc;
+}

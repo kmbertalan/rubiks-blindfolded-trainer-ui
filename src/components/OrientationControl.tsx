@@ -1,3 +1,5 @@
+import "./OrientationControl.css";
+
 type OrientationControlsProps = {
   onAdd: (move: string) => void;
   onReset: () => void;
@@ -5,8 +7,10 @@ type OrientationControlsProps = {
 
 function OrientationControls({ onAdd, onReset }: OrientationControlsProps) {
   return (
-    <div style={{ marginBottom: "1rem" }}>
-      <strong style={{ marginRight: "0.75rem" }}>Change Orientation:</strong>
+    <div className="orientation-controls">
+      <strong className="orientation-controls__label">
+        Change Orientation:
+      </strong>
       <button
         onClick={(e) => {
           onAdd("x");
@@ -16,29 +20,29 @@ function OrientationControls({ onAdd, onReset }: OrientationControlsProps) {
         X
       </button>
       <button
+        className="orientation-controls__button--spaced"
         onClick={(e) => {
           onAdd("y");
           (e.target as HTMLButtonElement).blur();
         }}
-        style={{ marginLeft: "0.5rem" }}
       >
         Y
       </button>
       <button
+        className="orientation-controls__button--spaced"
         onClick={(e) => {
           onAdd("z");
           (e.target as HTMLButtonElement).blur();
         }}
-        style={{ marginLeft: "0.5rem" }}
       >
         Z
       </button>
       <button
+        className="orientation-controls__button--spaced"
         onClick={(e) => {
           onReset();
           (e.target as HTMLButtonElement).blur();
         }}
-        style={{ marginLeft: "0.5rem" }}
       >
         Reset
       </button>

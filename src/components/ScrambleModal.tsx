@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Scrambo from "scrambo";
 import GenericModal from "./GenericModal";
+import "./ScrambleModal.css";
 
 interface ScrambleModalProps {
   isOpen: boolean;
@@ -35,13 +36,13 @@ const ScrambleModal: React.FC<ScrambleModalProps> = ({
         value={input}
         onChange={(e) => setInput(e.target.value)}
         placeholder="Leave empty for random"
-        style={{ width: "100%", padding: "0.5rem", marginBottom: "1rem" }}
+        className="scramble-modal__input"
       />
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
-        <button onClick={onClose} style={{ padding: "0.5rem 1rem" }}>
+      <div className="scramble-modal__buttons">
+        <button onClick={onClose} className="scramble-modal__button">
           Cancel
         </button>
-        <button onClick={handleGenerate} style={{ padding: "0.5rem 1rem" }}>
+        <button onClick={handleGenerate} className="scramble-modal__button">
           Generate
         </button>
       </div>

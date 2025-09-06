@@ -68,7 +68,12 @@ export default function FeedbackPage() {
             onChange={(e) => setMessage(e.target.value)}
             required
           />
-          <button type="submit">Send Feedback</button>
+          <button
+            type="submit"
+            onClick={(e) => (e.target as HTMLButtonElement).blur()}
+          >
+            Send Feedback
+          </button>
         </form>
       </div>
     </div>
