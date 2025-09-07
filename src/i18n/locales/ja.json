@@ -42,7 +42,7 @@
     "welcomeText": "ようこそ！このアプリは",
     "oldPochmannMethod": "オールドポッチマン法",
     "edgeBuffer": "エッジのバッファはURです。ULとの交換はT-permを使用して処理します。",
-    "cornerBuffer": "コーナーのバッファはUBLです。BFRとの交換を処理します。",
+    "cornerBuffer": "コーナーのバッファはLBUです。BFRとの交換を処理します。",
     "validationText": "でブラインド解法の練習をサポートするよう設計されています。アプリがブラインド解法を検証するので、記憶と実行に集中できます。",
     "howItWorks": "使い方:",
     "steps": {

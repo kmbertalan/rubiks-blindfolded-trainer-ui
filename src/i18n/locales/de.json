@@ -42,7 +42,7 @@
     "welcomeText": "Willkommen! Diese App hilft Ihnen beim Üben des Blindlösens mit der ",
     "oldPochmannMethod": "Old Pochmann Methode",
     "edgeBuffer": "Für Kanten ist der Puffer UR. Wir handhaben Tausche mit UL mit einem T-Perm.",
-    "cornerBuffer": "Für Ecken ist der Puffer UBL. Wir handhaben Tausche mit BFR.",
+    "cornerBuffer": "Für Ecken ist der Puffer LBU. Wir handhaben Tausche mit BFR.",
     "validationText": "Die App validiert Ihre Blindlösungen, damit Sie sich auf Memorierung und Ausführung konzentrieren können.",
     "howItWorks": "So funktioniert es:",
     "steps": {

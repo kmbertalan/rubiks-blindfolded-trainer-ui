@@ -42,7 +42,7 @@
     "welcomeText": "Üdvözöljük! Ez az alkalmazás a bekötött szemű kirakás gyakorlásához készült az ",
     "oldPochmannMethod": "Old Pochmann Módszer",
     "edgeBuffer": "Az éleknél a buffer az UR. Az UL-lel való cseréket T-perm-mel kezeljük.",
-    "cornerBuffer": "A sarkoknál a buffer az UBL. A BFR-rel való cseréket kezeljük.",
+    "cornerBuffer": "A sarkoknál a buffer az LBU. A BFR-rel való cseréket kezeljük.",
     "validationText": "Az alkalmazás ellenőrzi a bekötött szemű megoldásaidat, így a memorizálásra és végrehajtásra koncentrálhatsz.",
     "howItWorks": "Így működik:",
     "steps": {

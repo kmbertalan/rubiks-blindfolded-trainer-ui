@@ -42,7 +42,7 @@
     "welcomeText": "¡Bienvenido! Esta aplicación está diseñada para ayudarte a practicar la resolución a ciegas con el ",
     "oldPochmannMethod": "Método Old Pochmann",
     "edgeBuffer": "Para las aristas, el buffer es UR. Manejamos los intercambios con UL usando un T-perm.",
-    "cornerBuffer": "Para las esquinas, el buffer es UBL. Manejamos los intercambios con BFR.",
+    "cornerBuffer": "Para las esquinas, el buffer es LBU. Manejamos los intercambios con BFR.",
     "validationText": "La aplicación valida tus soluciones a ciegas para que puedas concentrarte en la memorización y ejecución.",
     "howItWorks": "Así es como funciona:",
     "steps": {

@@ -42,7 +42,7 @@
     "welcomeText": "欢迎！此应用旨在帮助您使用",
     "oldPochmannMethod": "Old Pochmann方法",
     "edgeBuffer": "练习盲拧。对于棱块，缓冲位是UR。我们使用T-perm处理与UL的交换。",
-    "cornerBuffer": "对于角块，缓冲位是UBL。我们处理与BFR的交换。",
+    "cornerBuffer": "对于角块，缓冲位是LBU。我们处理与BFR的交换。",
     "validationText": "应用验证您的盲拧解法，让您专注于记忆和执行。",
     "howItWorks": "工作原理：",
     "steps": {

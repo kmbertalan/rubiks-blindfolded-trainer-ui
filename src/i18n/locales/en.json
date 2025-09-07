@@ -42,7 +42,7 @@
     "welcomeText": "Welcome! This app is designed to help you practice blindfold solving with the ",
     "oldPochmannMethod": "Old Pochmann Method",
     "edgeBuffer": "For edges, the buffer is UR. We handle swaps with UL using a T-perm.",
-    "cornerBuffer": "For corners, the buffer is UBL. We handle swaps with BFR.",
+    "cornerBuffer": "For corners, the buffer is LBU. We handle swaps with BFR.",
     "validationText": "The app validates your blindfold solutions so you can focus on memorization and execution.",
     "howItWorks": "Here's how it works:",
     "steps": {

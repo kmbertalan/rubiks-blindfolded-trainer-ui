@@ -42,7 +42,7 @@
     "welcomeText": "Bienvenue! Cette application est conçue pour vous aider à pratiquer la résolution en aveugle avec la ",
     "oldPochmannMethod": "Méthode Old Pochmann",
     "edgeBuffer": "Pour les arêtes, le buffer est UR. Nous gérons les échanges avec UL en utilisant un T-perm.",
-    "cornerBuffer": "Pour les coins, le buffer est UBL. Nous gérons les échanges avec BFR.",
+    "cornerBuffer": "Pour les coins, le buffer est LBU. Nous gérons les échanges avec BFR.",
     "validationText": "L'application valide vos solutions en aveugle pour que vous puissiez vous concentrer sur la mémorisation et l'exécution.",
     "howItWorks": "Voici comment cela fonctionne:",
     "steps": {

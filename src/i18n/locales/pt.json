@@ -42,7 +42,7 @@
     "welcomeText": "Bem-vindo! Este app foi projetado para ajudá-lo a praticar a resolução vendada com o ",
     "oldPochmannMethod": "Método Old Pochmann",
     "edgeBuffer": "Para arestas, o buffer é UR. Lidamos com trocas com UL usando um T-perm.",
-    "cornerBuffer": "Para cantos, o buffer é UBL. Lidamos com trocas com BFR.",
+    "cornerBuffer": "Para cantos, o buffer é LBU. Lidamos com trocas com BFR.",
     "validationText": "O app valida suas soluções vendadas para que você possa focar na memorização e execução.",
     "howItWorks": "Aqui está como funciona:",
     "steps": {
