@@ -1,0 +1,90 @@
+{
+  "navigation": {
+    "trainer": "Treinador",
+    "howToUse": "Como Usar",
+    "feedback": "Feedback"
+  },
+  "trainer": {
+    "title": "Treinador de Cubo Vendado",
+    "getScramble": "Obter Embaralhamento",
+    "enterSolution": "Inserir Solução",
+    "resetCube": "Resetar Cubo",
+    "currentScramble": "Embaralhamento atual:",
+    "scrambleLabel": "Embaralhamento",
+    "solutionLabel": "Solução"
+  },
+  "orientation": {
+    "changeOrientation": "Mudar Orientação:",
+    "reset": "Resetar"
+  },
+  "scrambleModal": {
+    "title": "Inserir Embaralhamento",
+    "placeholder": "Deixe vazio para aleatório",
+    "cancel": "Cancelar",
+    "generate": "Gerar"
+  },
+  "solutionModal": {
+    "title": "Inserir Solução",
+    "edgePlaceholder": "Solução das arestas",
+    "cornerPlaceholder": "Solução dos cantos",
+    "cancel": "Cancelar",
+    "apply": "Aplicar",
+    "generateScrambleFirst": "Por favor, gere um embaralhamento primeiro!",
+    "noValidMoves": "Nenhum movimento de solução válido fornecido."
+  },
+  "rawSolution": {
+    "title": "Sua Solução Atual",
+    "edges": "Arestas",
+    "corners": "Cantos"
+  },
+  "howTo": {
+    "title": "Como Usar o Treinador de Cubo Vendado",
+    "welcomeText": "Bem-vindo! Este app foi projetado para ajudá-lo a praticar a resolução vendada com o ",
+    "oldPochmannMethod": "Método Old Pochmann",
+    "edgeBuffer": "Para arestas, o buffer é UR. Lidamos com trocas com UL usando um T-perm.",
+    "cornerBuffer": "Para cantos, o buffer é UBL. Lidamos com trocas com BFR.",
+    "validationText": "O app valida suas soluções vendadas para que você possa focar na memorização e execução.",
+    "howItWorks": "Aqui está como funciona:",
+    "steps": {
+      "scramble": {
+        "title": "Embaralhamento:",
+        "description": "Defina um embaralhamento para prática."
+      },
+      "orientation": {
+        "title": "Orientação:",
+        "description": "Ajuste os controles de orientação se necessário (sua solução seguirá esta orientação)."
+      },
+      "enterSolution": {
+        "title": "Inserir Solução:",
+        "description": "Digite sua tentativa de solução."
+      },
+      "cubes": {
+        "title": "Cubos:",
+        "description": "Compare o embaralhamento (cubo esquerdo) e sua solução aplicada (cubo direito)."
+      },
+      "currentSolution": {
+        "title": "Solução Atual:",
+        "description": "Revise suas sequências de arestas e cantos."
+      }
+    },
+    "altTexts": {
+      "edge": "Aresta",
+      "corner": "Canto",
+      "screenshot": "Screenshot do app"
+    }
+  },
+  "feedback": {
+    "title": "Enviar Feedback",
+    "subtitle": "Valorizamos sua opinião! Por favor, preencha o formulário abaixo se tiver sugestões ou feedback.",
+    "placeholders": {
+      "title": "Título",
+      "name": "Nome",
+      "email": "Seu email (se quiser uma resposta)",
+      "message": "Mensagem"
+    },
+    "sending": "Enviando...",
+    "sendFeedback": "Enviar Feedback",
+    "successMessage": "Feedback enviado com sucesso!",
+    "errorMessage": "Ops! Algo deu errado."
+  }
+}

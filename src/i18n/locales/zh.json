@@ -1,0 +1,90 @@
+{
+  "navigation": {
+    "trainer": "训练器",
+    "howToUse": "使用方法",
+    "feedback": "反馈"
+  },
+  "trainer": {
+    "title": "盲拧魔方训练器",
+    "getScramble": "获取打乱",
+    "enterSolution": "输入解法",
+    "resetCube": "重置魔方",
+    "currentScramble": "当前打乱:",
+    "scrambleLabel": "打乱",
+    "solutionLabel": "解法"
+  },
+  "orientation": {
+    "changeOrientation": "改变方向:",
+    "reset": "重置"
+  },
+  "scrambleModal": {
+    "title": "输入打乱",
+    "placeholder": "留空表示随机",
+    "cancel": "取消",
+    "generate": "生成"
+  },
+  "solutionModal": {
+    "title": "输入解法",
+    "edgePlaceholder": "棱块解法",
+    "cornerPlaceholder": "角块解法",
+    "cancel": "取消",
+    "apply": "应用",
+    "generateScrambleFirst": "请先生成打乱！",
+    "noValidMoves": "未提供有效的解法步骤。"
+  },
+  "rawSolution": {
+    "title": "您当前的解法",
+    "edges": "棱块",
+    "corners": "角块"
+  },
+  "howTo": {
+    "title": "如何使用盲拧魔方训练器",
+    "welcomeText": "欢迎！此应用旨在帮助您使用",
+    "oldPochmannMethod": "Old Pochmann方法",
+    "edgeBuffer": "练习盲拧。对于棱块，缓冲位是UR。我们使用T-perm处理与UL的交换。",
+    "cornerBuffer": "对于角块，缓冲位是UBL。我们处理与BFR的交换。",
+    "validationText": "应用验证您的盲拧解法，让您专注于记忆和执行。",
+    "howItWorks": "工作原理：",
+    "steps": {
+      "scramble": {
+        "title": "打乱：",
+        "description": "设置练习用的打乱。"
+      },
+      "orientation": {
+        "title": "方向：",
+        "description": "如需要，调整方向控制（您的解法将遵循此方向）。"
+      },
+      "enterSolution": {
+        "title": "输入解法：",
+        "description": "输入您的解法尝试。"
+      },
+      "cubes": {
+        "title": "魔方：",
+        "description": "比较打乱（左侧魔方）和您应用的解法（右侧魔方）。"
+      },
+      "currentSolution": {
+        "title": "当前解法：",
+        "description": "查看您的棱块和角块序列。"
+      }
+    },
+    "altTexts": {
+      "edge": "棱块",
+      "corner": "角块",
+      "screenshot": "应用截图"
+    }
+  },
+  "feedback": {
+    "title": "发送反馈",
+    "subtitle": "我们重视您的意见！如果您有任何建议或反馈，请填写下面的表单。",
+    "placeholders": {
+      "title": "标题",
+      "name": "姓名",
+      "email": "您的邮箱（如需回复）",
+      "message": "消息"
+    },
+    "sending": "发送中...",
+    "sendFeedback": "发送反馈",
+    "successMessage": "反馈发送成功！",
+    "errorMessage": "哎呀！出了点问题。"
+  }
+}

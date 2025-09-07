@@ -1,0 +1,90 @@
+{
+  "navigation": {
+    "trainer": "Entraîneur",
+    "howToUse": "Comment Utiliser",
+    "feedback": "Commentaires"
+  },
+  "trainer": {
+    "title": "Entraîneur de Cube Aveugle",
+    "getScramble": "Obtenir un Mélange",
+    "enterSolution": "Entrer la Solution",
+    "resetCube": "Réinitialiser le Cube",
+    "currentScramble": "Mélange actuel:",
+    "scrambleLabel": "Mélange",
+    "solutionLabel": "Solution"
+  },
+  "orientation": {
+    "changeOrientation": "Changer l'Orientation:",
+    "reset": "Réinitialiser"
+  },
+  "scrambleModal": {
+    "title": "Entrer le Mélange",
+    "placeholder": "Laisser vide pour aléatoire",
+    "cancel": "Annuler",
+    "generate": "Générer"
+  },
+  "solutionModal": {
+    "title": "Entrer la Solution",
+    "edgePlaceholder": "Solution des arêtes",
+    "cornerPlaceholder": "Solution des coins",
+    "cancel": "Annuler",
+    "apply": "Appliquer",
+    "generateScrambleFirst": "Veuillez d'abord générer un mélange!",
+    "noValidMoves": "Aucun mouvement de solution valide fourni."
+  },
+  "rawSolution": {
+    "title": "Votre Solution Actuelle",
+    "edges": "Arêtes",
+    "corners": "Coins"
+  },
+  "howTo": {
+    "title": "Comment Utiliser l'Entraîneur de Cube Aveugle",
+    "welcomeText": "Bienvenue! Cette application est conçue pour vous aider à pratiquer la résolution en aveugle avec la ",
+    "oldPochmannMethod": "Méthode Old Pochmann",
+    "edgeBuffer": "Pour les arêtes, le buffer est UR. Nous gérons les échanges avec UL en utilisant un T-perm.",
+    "cornerBuffer": "Pour les coins, le buffer est UBL. Nous gérons les échanges avec BFR.",
+    "validationText": "L'application valide vos solutions en aveugle pour que vous puissiez vous concentrer sur la mémorisation et l'exécution.",
+    "howItWorks": "Voici comment cela fonctionne:",
+    "steps": {
+      "scramble": {
+        "title": "Mélange:",
+        "description": "Définir un mélange pour la pratique."
+      },
+      "orientation": {
+        "title": "Orientation:",
+        "description": "Ajuster les contrôles d'orientation si nécessaire (votre solution suivra cette orientation)."
+      },
+      "enterSolution": {
+        "title": "Entrer la Solution:",
+        "description": "Tapez votre tentative de solution."
+      },
+      "cubes": {
+        "title": "Cubes:",
+        "description": "Comparez le mélange (cube de gauche) et votre solution appliquée (cube de droite)."
+      },
+      "currentSolution": {
+        "title": "Solution Actuelle:",
+        "description": "Examinez vos séquences d'arêtes et de coins."
+      }
+    },
+    "altTexts": {
+      "edge": "Arête",
+      "corner": "Coin",
+      "screenshot": "Capture d'écran de l'application"
+    }
+  },
+  "feedback": {
+    "title": "Envoyer des Commentaires",
+    "subtitle": "Nous apprécions vos commentaires! Veuillez remplir le formulaire ci-dessous si vous avez des suggestions ou des commentaires.",
+    "placeholders": {
+      "title": "Titre",
+      "name": "Nom",
+      "email": "Votre email (si vous souhaitez une réponse)",
+      "message": "Message"
+    },
+    "sending": "Envoi en cours...",
+    "sendFeedback": "Envoyer des Commentaires",
+    "successMessage": "Commentaires envoyés avec succès!",
+    "errorMessage": "Oups! Quelque chose s'est mal passé."
+  }
+}

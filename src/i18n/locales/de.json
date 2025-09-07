@@ -1,0 +1,90 @@
+{
+  "navigation": {
+    "trainer": "Trainer",
+    "howToUse": "Anleitung",
+    "feedback": "Feedback"
+  },
+  "trainer": {
+    "title": "Blindwürfel-Trainer",
+    "getScramble": "Scramble Holen",
+    "enterSolution": "Lösung Eingeben",
+    "resetCube": "Würfel Zurücksetzen",
+    "currentScramble": "Aktueller Scramble:",
+    "scrambleLabel": "Scramble",
+    "solutionLabel": "Lösung"
+  },
+  "orientation": {
+    "changeOrientation": "Orientierung Ändern:",
+    "reset": "Zurücksetzen"
+  },
+  "scrambleModal": {
+    "title": "Scramble Eingeben",
+    "placeholder": "Leer lassen für zufällig",
+    "cancel": "Abbrechen",
+    "generate": "Generieren"
+  },
+  "solutionModal": {
+    "title": "Lösung Eingeben",
+    "edgePlaceholder": "Kanten-Lösung",
+    "cornerPlaceholder": "Ecken-Lösung",
+    "cancel": "Abbrechen",
+    "apply": "Anwenden",
+    "generateScrambleFirst": "Bitte zuerst einen Scramble generieren!",
+    "noValidMoves": "Keine gültigen Lösungszüge angegeben."
+  },
+  "rawSolution": {
+    "title": "Ihre Aktuelle Lösung",
+    "edges": "Kanten",
+    "corners": "Ecken"
+  },
+  "howTo": {
+    "title": "Anleitung für den Blindwürfel-Trainer",
+    "welcomeText": "Willkommen! Diese App hilft Ihnen beim Üben des Blindlösens mit der ",
+    "oldPochmannMethod": "Old Pochmann Methode",
+    "edgeBuffer": "Für Kanten ist der Puffer UR. Wir handhaben Tausche mit UL mit einem T-Perm.",
+    "cornerBuffer": "Für Ecken ist der Puffer UBL. Wir handhaben Tausche mit BFR.",
+    "validationText": "Die App validiert Ihre Blindlösungen, damit Sie sich auf Memorierung und Ausführung konzentrieren können.",
+    "howItWorks": "So funktioniert es:",
+    "steps": {
+      "scramble": {
+        "title": "Scramble:",
+        "description": "Einen Scramble zum Üben festlegen."
+      },
+      "orientation": {
+        "title": "Orientierung:",
+        "description": "Orientierungssteuerung bei Bedarf anpassen (Ihre Lösung folgt dieser Orientierung)."
+      },
+      "enterSolution": {
+        "title": "Lösung Eingeben:",
+        "description": "Geben Sie Ihren Lösungsversuch ein."
+      },
+      "cubes": {
+        "title": "Würfel:",
+        "description": "Vergleichen Sie den Scramble (linker Würfel) und Ihre angewendete Lösung (rechter Würfel)."
+      },
+      "currentSolution": {
+        "title": "Aktuelle Lösung:",
+        "description": "Überprüfen Sie Ihre Kanten- und Eckensequenzen."
+      }
+    },
+    "altTexts": {
+      "edge": "Kante",
+      "corner": "Ecke",
+      "screenshot": "App-Screenshot"
+    }
+  },
+  "feedback": {
+    "title": "Feedback Senden",
+    "subtitle": "Wir schätzen Ihr Feedback! Bitte füllen Sie das untenstehende Formular aus, wenn Sie Vorschläge oder Feedback haben.",
+    "placeholders": {
+      "title": "Titel",
+      "name": "Name",
+      "email": "Ihre E-Mail (falls Sie eine Antwort wünschen)",
+      "message": "Nachricht"
+    },
+    "sending": "Wird gesendet...",
+    "sendFeedback": "Feedback Senden",
+    "successMessage": "Feedback erfolgreich gesendet!",
+    "errorMessage": "Ups! Etwas ist schiefgelaufen."
+  }
+}

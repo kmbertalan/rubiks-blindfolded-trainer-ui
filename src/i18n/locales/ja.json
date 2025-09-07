@@ -1,0 +1,90 @@
+{
+  "navigation": {
+    "trainer": "トレーナー",
+    "howToUse": "使い方",
+    "feedback": "フィードバック"
+  },
+  "trainer": {
+    "title": "ブラインドキューブトレーナー",
+    "getScramble": "スクランブル取得",
+    "enterSolution": "解法入力",
+    "resetCube": "キューブリセット",
+    "currentScramble": "現在のスクランブル:",
+    "scrambleLabel": "スクランブル",
+    "solutionLabel": "解法"
+  },
+  "orientation": {
+    "changeOrientation": "向き変更:",
+    "reset": "リセット"
+  },
+  "scrambleModal": {
+    "title": "スクランブル入力",
+    "placeholder": "ランダムの場合は空白のまま",
+    "cancel": "キャンセル",
+    "generate": "生成"
+  },
+  "solutionModal": {
+    "title": "解法入力",
+    "edgePlaceholder": "エッジ解法",
+    "cornerPlaceholder": "コーナー解法",
+    "cancel": "キャンセル",
+    "apply": "適用",
+    "generateScrambleFirst": "まずスクランブルを生成してください！",
+    "noValidMoves": "有効な解法手順が提供されていません。"
+  },
+  "rawSolution": {
+    "title": "現在の解法",
+    "edges": "エッジ",
+    "corners": "コーナー"
+  },
+  "howTo": {
+    "title": "ブラインドキューブトレーナーの使い方",
+    "welcomeText": "ようこそ！このアプリは",
+    "oldPochmannMethod": "オールドポッチマン法",
+    "edgeBuffer": "エッジのバッファはURです。ULとの交換はT-permを使用して処理します。",
+    "cornerBuffer": "コーナーのバッファはUBLです。BFRとの交換を処理します。",
+    "validationText": "でブラインド解法の練習をサポートするよう設計されています。アプリがブラインド解法を検証するので、記憶と実行に集中できます。",
+    "howItWorks": "使い方:",
+    "steps": {
+      "scramble": {
+        "title": "スクランブル:",
+        "description": "練習用のスクランブルを設定します。"
+      },
+      "orientation": {
+        "title": "向き:",
+        "description": "必要に応じて向きコントロールを調整します（解法はこの向きに従います）。"
+      },
+      "enterSolution": {
+        "title": "解法入力:",
+        "description": "解法の試行を入力します。"
+      },
+      "cubes": {
+        "title": "キューブ:",
+        "description": "スクランブル（左のキューブ）と適用された解法（右のキューブ）を比較します。"
+      },
+      "currentSolution": {
+        "title": "現在の解法:",
+        "description": "エッジとコーナーのシーケンスを確認します。"
+      }
+    },
+    "altTexts": {
+      "edge": "エッジ",
+      "corner": "コーナー",
+      "screenshot": "アプリのスクリーンショット"
+    }
+  },
+  "feedback": {
+    "title": "フィードバック送信",
+    "subtitle": "ご意見をお聞かせください！提案やフィードバックがございましたら、下記フォームにご記入ください。",
+    "placeholders": {
+      "title": "タイトル",
+      "name": "お名前",
+      "email": "メールアドレス（返信をご希望の場合）",
+      "message": "メッセージ"
+    },
+    "sending": "送信中...",
+    "sendFeedback": "フィードバック送信",
+    "successMessage": "フィードバックが正常に送信されました！",
+    "errorMessage": "申し訳ございません！何らかの問題が発生しました。"
+  }
+}

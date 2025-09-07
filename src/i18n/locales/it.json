@@ -1,0 +1,90 @@
+{
+  "navigation": {
+    "trainer": "Allenatore",
+    "howToUse": "Come Usare",
+    "feedback": "Feedback"
+  },
+  "trainer": {
+    "title": "Allenatore Cubo Bendato",
+    "getScramble": "Ottieni Scramble",
+    "enterSolution": "Inserisci Soluzione",
+    "resetCube": "Resetta Cubo",
+    "currentScramble": "Scramble attuale:",
+    "scrambleLabel": "Scramble",
+    "solutionLabel": "Soluzione"
+  },
+  "orientation": {
+    "changeOrientation": "Cambia Orientamento:",
+    "reset": "Resetta"
+  },
+  "scrambleModal": {
+    "title": "Inserisci Scramble",
+    "placeholder": "Lascia vuoto per casuale",
+    "cancel": "Annulla",
+    "generate": "Genera"
+  },
+  "solutionModal": {
+    "title": "Inserisci Soluzione",
+    "edgePlaceholder": "Soluzione spigoli",
+    "cornerPlaceholder": "Soluzione angoli",
+    "cancel": "Annulla",
+    "apply": "Applica",
+    "generateScrambleFirst": "Per favore genera prima uno scramble!",
+    "noValidMoves": "Nessuna mossa di soluzione valida fornita."
+  },
+  "rawSolution": {
+    "title": "La Tua Soluzione Attuale",
+    "edges": "Spigoli",
+    "corners": "Angoli"
+  },
+  "howTo": {
+    "title": "Come Usare l'Allenatore Cubo Bendato",
+    "welcomeText": "Benvenuto! Questa app è progettata per aiutarti a praticare la risoluzione bendata con il ",
+    "oldPochmannMethod": "Metodo Old Pochmann",
+    "edgeBuffer": "Per gli spigoli, il buffer è UR. Gestiamo gli scambi con UL usando un T-perm.",
+    "cornerBuffer": "Per gli angoli, il buffer è UBL. Gestiamo gli scambi con BFR.",
+    "validationText": "L'app convalida le tue soluzioni bendate così puoi concentrarti sulla memorizzazione e l'esecuzione.",
+    "howItWorks": "Ecco come funziona:",
+    "steps": {
+      "scramble": {
+        "title": "Scramble:",
+        "description": "Imposta uno scramble per la pratica."
+      },
+      "orientation": {
+        "title": "Orientamento:",
+        "description": "Regola i controlli di orientamento se necessario (la tua soluzione seguirà questo orientamento)."
+      },
+      "enterSolution": {
+        "title": "Inserisci Soluzione:",
+        "description": "Digita il tuo tentativo di soluzione."
+      },
+      "cubes": {
+        "title": "Cubi:",
+        "description": "Confronta lo scramble (cubo sinistro) e la tua soluzione applicata (cubo destro)."
+      },
+      "currentSolution": {
+        "title": "Soluzione Attuale:",
+        "description": "Rivedi le tue sequenze di spigoli e angoli."
+      }
+    },
+    "altTexts": {
+      "edge": "Spigolo",
+      "corner": "Angolo",
+      "screenshot": "Screenshot dell'app"
+    }
+  },
+  "feedback": {
+    "title": "Invia Feedback",
+    "subtitle": "Apprezziamo il tuo input! Per favore compila il modulo qui sotto se hai suggerimenti o feedback.",
+    "placeholders": {
+      "title": "Titolo",
+      "name": "Nome",
+      "email": "La tua email (se desideri una risposta)",
+      "message": "Messaggio"
+    },
+    "sending": "Invio in corso...",
+    "sendFeedback": "Invia Feedback",
+    "successMessage": "Feedback inviato con successo!",
+    "errorMessage": "Ops! Qualcosa è andato storto."
+  }
+}
