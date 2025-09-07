@@ -1,0 +1,90 @@
+{
+  "navigation": {
+    "trainer": "Entrenador",
+    "howToUse": "Cómo Usar",
+    "feedback": "Comentarios"
+  },
+  "trainer": {
+    "title": "Entrenador de Cubo a Ciegas",
+    "getScramble": "Obtener Mezcla",
+    "enterSolution": "Ingresar Solución",
+    "resetCube": "Reiniciar Cubo",
+    "currentScramble": "Mezcla actual:",
+    "scrambleLabel": "Mezcla",
+    "solutionLabel": "Solución"
+  },
+  "orientation": {
+    "changeOrientation": "Cambiar Orientación:",
+    "reset": "Reiniciar"
+  },
+  "scrambleModal": {
+    "title": "Ingresar Mezcla",
+    "placeholder": "Dejar vacío para aleatorio",
+    "cancel": "Cancelar",
+    "generate": "Generar"
+  },
+  "solutionModal": {
+    "title": "Ingresar Solución",
+    "edgePlaceholder": "Solución de aristas",
+    "cornerPlaceholder": "Solución de esquinas",
+    "cancel": "Cancelar",
+    "apply": "Aplicar",
+    "generateScrambleFirst": "¡Por favor genera una mezcla primero!",
+    "noValidMoves": "No se proporcionaron movimientos de solución válidos."
+  },
+  "rawSolution": {
+    "title": "Tu Solución Actual",
+    "edges": "Aristas",
+    "corners": "Esquinas"
+  },
+  "howTo": {
+    "title": "Cómo Usar el Entrenador de Cubo a Ciegas",
+    "welcomeText": "¡Bienvenido! Esta aplicación está diseñada para ayudarte a practicar la resolución a ciegas con el ",
+    "oldPochmannMethod": "Método Old Pochmann",
+    "edgeBuffer": "Para las aristas, el buffer es UR. Manejamos los intercambios con UL usando un T-perm.",
+    "cornerBuffer": "Para las esquinas, el buffer es UBL. Manejamos los intercambios con BFR.",
+    "validationText": "La aplicación valida tus soluciones a ciegas para que puedas concentrarte en la memorización y ejecución.",
+    "howItWorks": "Así es como funciona:",
+    "steps": {
+      "scramble": {
+        "title": "Mezcla:",
+        "description": "Establece una mezcla para practicar."
+      },
+      "orientation": {
+        "title": "Orientación:",
+        "description": "Ajusta los controles de orientación si es necesario (tu solución seguirá esta orientación)."
+      },
+      "enterSolution": {
+        "title": "Ingresar Solución:",
+        "description": "Escribe tu intento de solución."
+      },
+      "cubes": {
+        "title": "Cubos:",
+        "description": "Compara la mezcla (cubo izquierdo) y tu solución aplicada (cubo derecho)."
+      },
+      "currentSolution": {
+        "title": "Solución Actual:",
+        "description": "Revisa tus secuencias de aristas y esquinas."
+      }
+    },
+    "altTexts": {
+      "edge": "Arista",
+      "corner": "Esquina",
+      "screenshot": "Captura de pantalla de la aplicación"
+    }
+  },
+  "feedback": {
+    "title": "Enviar Comentarios",
+    "subtitle": "¡Valoramos tu opinión! Por favor completa el formulario a continuación si tienes alguna sugerencia o comentario.",
+    "placeholders": {
+      "title": "Título",
+      "name": "Nombre",
+      "email": "Tu email (si quieres una respuesta)",
+      "message": "Mensaje"
+    },
+    "sending": "Enviando...",
+    "sendFeedback": "Enviar Comentarios",
+    "successMessage": "¡Comentarios enviados exitosamente!",
+    "errorMessage": "¡Ups! Algo salió mal."
+  }
+}

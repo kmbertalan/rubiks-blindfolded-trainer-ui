@@ -1,0 +1,90 @@
+{
+  "navigation": {
+    "trainer": "Gyakorló",
+    "howToUse": "Használat",
+    "feedback": "Visszajelzés"
+  },
+  "trainer": {
+    "title": "Bekötött Szemű Kocka Gyakorló",
+    "getScramble": "Keverés Generálása",
+    "enterSolution": "Megoldás Megadása",
+    "resetCube": "Kocka Visszaállítása",
+    "currentScramble": "Jelenlegi keverés:",
+    "scrambleLabel": "Keverés",
+    "solutionLabel": "Megoldás"
+  },
+  "orientation": {
+    "changeOrientation": "Orientáció Változtatása:",
+    "reset": "Visszaállítás"
+  },
+  "scrambleModal": {
+    "title": "Keverés Megadása",
+    "placeholder": "Hagyd üresen véletlenszerű keveréshez",
+    "cancel": "Mégse",
+    "generate": "Generálás"
+  },
+  "solutionModal": {
+    "title": "Megoldás Megadása",
+    "edgePlaceholder": "Él megoldás",
+    "cornerPlaceholder": "Sarok megoldás",
+    "cancel": "Mégse",
+    "apply": "Alkalmazás",
+    "generateScrambleFirst": "Először generálj egy keverést!",
+    "noValidMoves": "Nincs érvényes megoldási lépés megadva."
+  },
+  "rawSolution": {
+    "title": "Jelenlegi Megoldásod",
+    "edges": "Élek",
+    "corners": "Sarkok"
+  },
+  "howTo": {
+    "title": "Bekötött Szemű Kocka Gyakorló Használata",
+    "welcomeText": "Üdvözöljük! Ez az alkalmazás a bekötött szemű kirakás gyakorlásához készült az ",
+    "oldPochmannMethod": "Old Pochmann Módszer",
+    "edgeBuffer": "Az éleknél a buffer az UR. Az UL-lel való cseréket T-perm-mel kezeljük.",
+    "cornerBuffer": "A sarkoknál a buffer az UBL. A BFR-rel való cseréket kezeljük.",
+    "validationText": "Az alkalmazás ellenőrzi a bekötött szemű megoldásaidat, így a memorizálásra és végrehajtásra koncentrálhatsz.",
+    "howItWorks": "Így működik:",
+    "steps": {
+      "scramble": {
+        "title": "Keverés:",
+        "description": "Állíts be egy keverést a gyakorláshoz."
+      },
+      "orientation": {
+        "title": "Orientáció:",
+        "description": "Állítsd be az orientáció vezérlőket szükség esetén (a megoldásod ezt az orientációt követi)."
+      },
+      "enterSolution": {
+        "title": "Megoldás Megadása:",
+        "description": "Írd be a megoldási kísérletedet."
+      },
+      "cubes": {
+        "title": "Kockák:",
+        "description": "Hasonlítsd össze a keverést (bal kocka) és az alkalmazott megoldásodat (jobb kocka)."
+      },
+      "currentSolution": {
+        "title": "Jelenlegi Megoldás:",
+        "description": "Tekintsd át az él és sarok szekvenciáidat."
+      }
+    },
+    "altTexts": {
+      "edge": "Él",
+      "corner": "Sarok",
+      "screenshot": "Alkalmazás képernyőkép"
+    }
+  },
+  "feedback": {
+    "title": "Visszajelzés Küldése",
+    "subtitle": "Értékeljük a véleményedet! Kérjük, töltsd ki az alábbi űrlapot, ha van javaslatod vagy visszajelzésed.",
+    "placeholders": {
+      "title": "Cím",
+      "name": "Név",
+      "email": "Email címed (ha szeretnél választ)",
+      "message": "Üzenet"
+    },
+    "sending": "Küldés...",
+    "sendFeedback": "Visszajelzés Küldése",
+    "successMessage": "Visszajelzés sikeresen elküldve!",
+    "errorMessage": "Hoppá! Valami hiba történt."
+  }
+}

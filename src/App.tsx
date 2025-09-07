@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import TrainerPage from "./pages/TrainerPage";
 import FeedbackPage from "./pages/FeedbackPage";
+import LanguageSelector from "./components/LanguageSelector";
 import "./App.css";
 import HowToPage from "./pages/HowToPage";
 
@@ -12,15 +13,18 @@ function App() {
     <div className="app-container">
       <Router>
         <nav className="navbar">
-          <Link to="/" className="nav-link">
-            {t('navigation.trainer')}
-          </Link>
-          <Link to="/howTo" className="nav-link">
-            {t('navigation.howToUse')}
-          </Link>
-          <Link to="/feedback" className="nav-link">
-            {t('navigation.feedback')}
-          </Link>
+          <div className="navbar__links">
+            <Link to="/" className="nav-link">
+              {t('navigation.trainer')}
+            </Link>
+            <Link to="/howTo" className="nav-link">
+              {t('navigation.howToUse')}
+            </Link>
+            <Link to="/feedback" className="nav-link">
+              {t('navigation.feedback')}
+            </Link>
+          </div>
+          <LanguageSelector />
         </nav>
 
         <Routes>
