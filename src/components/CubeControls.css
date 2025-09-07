@@ -11,3 +11,27 @@
 .cube-controls__cube-label {
   font-weight: bold;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cube-controls__cubes-container {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .cube-controls__button--spaced {
+    margin-left: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cube-controls__cubes-container {
+    gap: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cube-controls__button--spaced {
+    margin-left: 0.25rem;
+  }
+}

@@ -12,3 +12,38 @@
   width: 600px;
   height: 600px;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cube-viewer--size-small {
+    width: 150px;
+    height: 150px;
+  }
+
+  .cube-viewer--size-medium {
+    width: 300px;
+    height: 300px;
+  }
+
+  .cube-viewer--size-large {
+    width: 450px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cube-viewer--size-small {
+    width: 120px;
+    height: 120px;
+  }
+
+  .cube-viewer--size-medium {
+    width: 250px;
+    height: 250px;
+  }
+
+  .cube-viewer--size-large {
+    width: 300px;
+    height: 300px;
+  }
+}
