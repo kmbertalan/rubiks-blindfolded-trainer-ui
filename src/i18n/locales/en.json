@@ -1,0 +1,90 @@
+{
+  "navigation": {
+    "trainer": "Trainer",
+    "howToUse": "How To Use",
+    "feedback": "Feedback"
+  },
+  "trainer": {
+    "title": "Blind Cube Trainer",
+    "getScramble": "Get Scramble",
+    "enterSolution": "Enter Solution",
+    "resetCube": "Reset Cube",
+    "currentScramble": "Current scramble:",
+    "scrambleLabel": "Scramble",
+    "solutionLabel": "Solution"
+  },
+  "orientation": {
+    "changeOrientation": "Change Orientation:",
+    "reset": "Reset"
+  },
+  "scrambleModal": {
+    "title": "Enter Scramble",
+    "placeholder": "Leave empty for random",
+    "cancel": "Cancel",
+    "generate": "Generate"
+  },
+  "solutionModal": {
+    "title": "Enter Solution",
+    "edgePlaceholder": "Edge solution",
+    "cornerPlaceholder": "Corner solution",
+    "cancel": "Cancel",
+    "apply": "Apply",
+    "generateScrambleFirst": "Please generate a scramble first!",
+    "noValidMoves": "No valid solution moves provided."
+  },
+  "rawSolution": {
+    "title": "Your Current Solution",
+    "edges": "Edges",
+    "corners": "Corners"
+  },
+  "howTo": {
+    "title": "How to Use Blind Cube Trainer",
+    "welcomeText": "Welcome! This app is designed to help you practice blindfold solving with the ",
+    "oldPochmannMethod": "Old Pochmann Method",
+    "edgeBuffer": "For edges, the buffer is UR. We handle swaps with UL using a T-perm.",
+    "cornerBuffer": "For corners, the buffer is UBL. We handle swaps with BFR.",
+    "validationText": "The app validates your blindfold solutions so you can focus on memorization and execution.",
+    "howItWorks": "Here's how it works:",
+    "steps": {
+      "scramble": {
+        "title": "Scramble:",
+        "description": "Set a scramble for practice."
+      },
+      "orientation": {
+        "title": "Orientation:",
+        "description": "Adjust orientation controls if needed (your solution will follow this orientation)."
+      },
+      "enterSolution": {
+        "title": "Enter Solution:",
+        "description": "Type in your solution attempt."
+      },
+      "cubes": {
+        "title": "Cubes:",
+        "description": "Compare the scramble (left cube) and your solution applied (right cube)."
+      },
+      "currentSolution": {
+        "title": "Current Solution:",
+        "description": "Review your edge & corner sequences."
+      }
+    },
+    "altTexts": {
+      "edge": "Edge",
+      "corner": "Corner",
+      "screenshot": "App screenshot"
+    }
+  },
+  "feedback": {
+    "title": "Send Feedback",
+    "subtitle": "We value your input! Please fill out the form below if you have any suggestions or feedback.",
+    "placeholders": {
+      "title": "Title",
+      "name": "Name",
+      "email": "Your email (if you'd like a response)",
+      "message": "Message"
+    },
+    "sending": "Sending...",
+    "sendFeedback": "Send Feedback",
+    "successMessage": "Feedback sent successfully!",
+    "errorMessage": "Oops! Something went wrong."
+  }
+}

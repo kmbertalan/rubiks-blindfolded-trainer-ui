@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import "./OrientationControl.css";
 
 type OrientationControlsProps = {
@@ -6,10 +7,12 @@ type OrientationControlsProps = {
 };
 
 function OrientationControls({ onAdd, onReset }: OrientationControlsProps) {
+  const { t } = useTranslation();
+
   return (
     <div className="orientation-controls">
       <strong className="orientation-controls__label">
-        Change Orientation:
+        {t('orientation.changeOrientation')}
       </strong>
       <button
         onClick={(e) => {
@@ -44,7 +47,7 @@ function OrientationControls({ onAdd, onReset }: OrientationControlsProps) {
           (e.target as HTMLButtonElement).blur();
         }}
       >
-        Reset
+        {t('orientation.reset')}
       </button>
     </div>
   );

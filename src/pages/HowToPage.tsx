@@ -1,59 +1,55 @@
+import { useTranslation } from "react-i18next";
 import "./HowToPage.css";
 
 function HowToPage() {
+  const { t } = useTranslation();
+
   return (
     <div className="how-to-page">
       <div className="how-to-page__content">
-        <h3>How to Use Blind Cube Trainer</h3>
+        <h3>{t('howTo.title')}</h3>
         <div className="how-to-page__info-box">
           <p className="how-to-page__info-text">
-            {
-              "Welcome! This app is designed to help you practice blindfold solving with the "
-            }
+            {t('howTo.welcomeText')}
             <a
               href="https://cuberoot.me/wp-content/uploads/2019/02/502-3BLD-OP.pdf"
               target="_blank"
             >
-              Old Pochmann Method
+              {t('howTo.oldPochmannMethod')}
             </a>
             .
             <ul className="how-to-page__info-list">
               <li>
-                For edges, the buffer is UR. We handle swaps with UL using a
-                T-perm.
+                {t('howTo.edgeBuffer')}
               </li>
-              <li>For corners, the buffer is UBL. We handle swaps with BFR.</li>
+              <li>{t('howTo.cornerBuffer')}</li>
             </ul>
             <b>
-              The app validates your blindfold solutions so you can focus on
-              memorization and execution.
+              {t('howTo.validationText')}
             </b>
           </p>
         </div>
         <div className="how-to-page__images-container">
-          <img src="/edge.png" alt="Edge" className="how-to-page__image" />
-          <img src="/corner.png" alt="Corner" className="how-to-page__image" />
+          <img src="/edge.png" alt={t('howTo.altTexts.edge')} className="how-to-page__image" />
+          <img src="/corner.png" alt={t('howTo.altTexts.corner')} className="how-to-page__image" />
         </div>
         <div className="how-to-page__bottom-info">
-          <p className="how-to-page__bottom-text">Here's how it works:</p>
+          <p className="how-to-page__bottom-text">{t('howTo.howItWorks')}</p>
           <ol className="how-to-page__steps-list">
             <li>
-              <strong>Scramble:</strong> Set a scramble for practice.
+              <strong>{t('howTo.steps.scramble.title')}</strong> {t('howTo.steps.scramble.description')}
             </li>
             <li>
-              <strong>Orientation:</strong> Adjust orientation controls if
-              needed (your solution will follow this orientation).
+              <strong>{t('howTo.steps.orientation.title')}</strong> {t('howTo.steps.orientation.description')}
             </li>
             <li>
-              <strong>Enter Solution:</strong> Type in your solution attempt.
+              <strong>{t('howTo.steps.enterSolution.title')}</strong> {t('howTo.steps.enterSolution.description')}
             </li>
             <li>
-              <strong>Cubes:</strong> Compare the scramble (left cube) and your
-              solution applied (right cube).
+              <strong>{t('howTo.steps.cubes.title')}</strong> {t('howTo.steps.cubes.description')}
             </li>
             <li>
-              <strong>Current Solution:</strong> Review your edge & corner
-              sequences.
+              <strong>{t('howTo.steps.currentSolution.title')}</strong> {t('howTo.steps.currentSolution.description')}
             </li>
           </ol>
         </div>
@@ -62,7 +58,7 @@ function HowToPage() {
       <div className="how-to-page__screenshot-container">
         <img
           src="/screenshot_with_numbers.png"
-          alt="App screenshot"
+          alt={t('howTo.altTexts.screenshot')}
           className="how-to-page__screenshot"
         />
       </div>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import ScrambleModal from "../components/ScrambleModal";
 import SolutionModal from "../components/SolutionModal";
 import { orientationMoves } from "../constants";
@@ -7,6 +8,7 @@ import CubeControls from "../components/CubeControls";
 import RawSolution, { type RawSolutionType } from "../components/RawSolution";
 
 function TrainerPage() {
+  const { t } = useTranslation();
   const [algorithm, setAlgorithm] = useState("");
   const [scramble, setScramble] = useState("");
   const [rawSolution, setRawSolution] = useState<RawSolutionType | null>(null);
@@ -47,7 +49,7 @@ function TrainerPage() {
 
   return (
     <>
-      <h1>Blind Cube Trainer</h1>
+      <h1>{t('trainer.title')}</h1>
       <OrientationControls onAdd={addOrientation} onReset={resetOrientation} />
       <CubeControls
         scramble={scramble}

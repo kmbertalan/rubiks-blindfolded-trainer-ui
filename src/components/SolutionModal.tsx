@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { edgeMoves, cornerMoves, parity } from "./../constants";
 import GenericModal from "./GenericModal";
 import "./SolutionModal.css";
@@ -18,12 +19,13 @@ const SolutionModal: React.FC<SolutionModalProps> = ({
   onSubmit,
   handleRawSolution,
 }) => {
+  const { t } = useTranslation();
   const [edgeInput, setEdgeInput] = useState("");
   const [cornerInput, setCornerInput] = useState("");
 
   const handleApply = () => {
     if (!scramble) {
-      alert("Please generate a scramble first!");
+      alert(t('solutionModal.generateScrambleFirst'));
       return;
     }
 
@@ -52,7 +54,7 @@ const SolutionModal: React.FC<SolutionModalProps> = ({
       setCornerInput("");
       onClose();
     } else {
-      alert("No valid solution moves provided.");
+      alert(t('solutionModal.noValidMoves'));
     }
   };
 
@@ -60,27 +62,27 @@ const SolutionModal: React.FC<SolutionModalProps> = ({
 
   return (
     <GenericModal onClose={onClose}>
-      <h2>Enter Solution</h2>
+      <h2>{t('solutionModal.title')}</h2>
       <input
         type="text"
         value={edgeInput}
         onChange={(e) => setEdgeInput(e.target.value)}
-        placeholder="Edge solution"
+        placeholder={t('solutionModal.edgePlaceholder')}
         className="solution-modal__input"
       />
       <input
         type="text"
         value={cornerInput}
         onChange={(e) => setCornerInput(e.target.value)}
-        placeholder="Corner solution"
+        placeholder={t('solutionModal.cornerPlaceholder')}
         className="solution-modal__input solution-modal__input--last"
       />
       <div className="solution-modal__buttons">
         <button onClick={onClose} className="solution-modal__button">
-          Cancel
+          {t('solutionModal.cancel')}
         </button>
         <button onClick={handleApply} className="solution-modal__button">
-          Apply
+          {t('solutionModal.apply')}
         </button>
       </div>
     </GenericModal>

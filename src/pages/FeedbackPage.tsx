@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import emailjs from "@emailjs/browser";
 import "./FeedbackPage.css";
 
 export default function FeedbackPage() {
+  const { t } = useTranslation();
   const [title, setTitle] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -25,14 +27,14 @@ export default function FeedbackPage() {
       )
       .then(
         () => {
-          alert("Feedback sent successfully!");
+          alert(t('feedback.successMessage'));
           setTitle("");
           setName("");
           setEmail("");
           setMessage("");
         },
         (error) => {
-          alert("Oops! Something went wrong." + error);
+          alert(t('feedback.errorMessage') + error);
         }
       )
       .finally(() => {
@@ -43,34 +45,33 @@ export default function FeedbackPage() {
   return (
     <div className="feedback-page">
       <div className="feedback-card">
-        <h2>Send Feedback</h2>
+        <h2>{t('feedback.title')}</h2>
         <p className="feedback-subtitle">
-          We value your input! Please fill out the form below if you have any
-          suggestions or feedback.
+          {t('feedback.subtitle')}
         </p>
         <form onSubmit={handleSubmit} className="feedback-form">
           <input
             type="text"
-            placeholder="Title"
+            placeholder={t('feedback.placeholders.title')}
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             required
           />
           <input
             type="text"
-            placeholder="Name"
+            placeholder={t('feedback.placeholders.name')}
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
           />
           <input
             type="email"
-            placeholder="Your email (if you'd like a response)"
+            placeholder={t('feedback.placeholders.email')}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <textarea
-            placeholder="Message"
+            placeholder={t('feedback.placeholders.message')}
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
@@ -80,7 +81,7 @@ export default function FeedbackPage() {
             disabled={loading}
             onClick={(e) => (e.target as HTMLButtonElement).blur()}
           >
-            {loading ? "Sending..." : "Send Feedback"}
+            {loading ? t('feedback.sending') : t('feedback.sendFeedback')}
           </button>
         </form>
       </div>
