@@ -12,7 +12,6 @@
   font-weight: bold;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .cube-controls__cubes-container {
     gap: 1rem;

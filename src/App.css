@@ -1,7 +1,27 @@
+:root {
+  --app-bg-color: #faedcd;
+  --navbar-bg-color: #ffffff;
+  --navbar-shadow: rgba(0, 0, 0, 0.1);
+  --nav-link-color: #333;
+  --nav-link-hover-bg: #f3d88b;
+  --nav-link-hover-color: #111;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --app-bg-color: #1a1a1a;
+    --navbar-bg-color: #2d2d2d;
+    --navbar-shadow: rgba(255, 255, 255, 0.1);
+    --nav-link-color: #e0e0e0;
+    --nav-link-hover-bg: #404040;
+    --nav-link-hover-color: #ffffff;
+  }
+}
+
 .app-container {
   width: 100vw;
   min-height: 100vh;
-  background-color: #faedcd;
+  background-color: var(--app-bg-color);
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -11,8 +31,8 @@
 }
 
 .navbar {
-  background-color: #ffffff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: var(--navbar-bg-color);
+  box-shadow: 0 4px 12px var(--navbar-shadow);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +50,7 @@
 }
 
 .nav-link {
-  color: #333;
+  color: var(--nav-link-color);
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1rem;
@@ -40,11 +60,10 @@
 }
 
 .nav-link:hover {
-  background-color: #f3d88b;
-  color: #111;
+  background-color: var(--nav-link-hover-bg);
+  color: var(--nav-link-hover-color);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .navbar {
     padding: 0.5rem;

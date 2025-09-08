@@ -1,21 +1,45 @@
+:root {
+  --feedback-page-bg: #faedcd;
+  --feedback-card-bg: #ffffff;
+  --feedback-card-shadow: rgba(0, 0, 0, 0.1);
+  --feedback-title-color: #333;
+  --feedback-subtitle-color: #666;
+  --feedback-input-border: #ccc;
+  --feedback-input-bg: #ffffff;
+  --feedback-input-color: #333;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --feedback-page-bg: #1a1a1a;
+    --feedback-card-bg: #2d2d2d;
+    --feedback-card-shadow: rgba(255, 255, 255, 0.1);
+    --feedback-title-color: #e0e0e0;
+    --feedback-subtitle-color: #b0b0b0;
+    --feedback-input-border: #555555;
+    --feedback-input-bg: #3a3a3a;
+    --feedback-input-color: #e0e0e0;
+  }
+}
+
 .feedback-page {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #faedcd;
+  background-color: var(--feedback-page-bg);
   padding: 1rem;
   box-sizing: border-box;
   overflow-y: auto;
 }
 
 .feedback-card {
-  background-color: #ffffff;
+  background-color: var(--feedback-card-bg);
   border-radius: 30px;
   padding: 2rem;
   width: 100%;
   max-width: 28.125rem;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px var(--feedback-card-shadow);
   text-align: center;
   box-sizing: border-box;
   margin-bottom: 5rem;
@@ -24,12 +48,12 @@
 .feedback-card h2 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
-  color: #333;
+  color: var(--feedback-title-color);
 }
 
 .feedback-subtitle {
   font-size: 0.9rem;
-  color: #666;
+  color: var(--feedback-subtitle-color);
   margin-bottom: 1.5rem;
 }
 
@@ -38,7 +62,9 @@
   width: 100%;
   padding: 0.9rem 1rem;
   margin-bottom: 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid var(--feedback-input-border);
+  background-color: var(--feedback-input-bg);
+  color: var(--feedback-input-color);
   border-radius: 15px;
   font-size: 1rem;
   transition: all 0.2s ease-in-out;

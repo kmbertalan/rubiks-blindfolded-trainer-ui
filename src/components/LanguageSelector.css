@@ -1,3 +1,33 @@
+:root {
+  --lang-dropdown-bg: #f8f9fa;
+  --lang-dropdown-border: #dee2e6;
+  --lang-dropdown-color: #333;
+  --lang-dropdown-hover-bg: #e9ecef;
+  --lang-dropdown-hover-border: #adb5bd;
+  --lang-dropdown-focus-bg: #e9ecef;
+  --lang-dropdown-focus-border: #6c757d;
+  --lang-dropdown-shadow: rgba(0, 0, 0, 0.1);
+  --lang-dropdown-hover-shadow: rgba(0, 0, 0, 0.15);
+  --lang-option-bg: #ffffff;
+  --lang-option-color: #333;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --lang-dropdown-bg: #3a3a3a;
+    --lang-dropdown-border: #555555;
+    --lang-dropdown-color: #e0e0e0;
+    --lang-dropdown-hover-bg: #4a4a4a;
+    --lang-dropdown-hover-border: #666666;
+    --lang-dropdown-focus-bg: #4a4a4a;
+    --lang-dropdown-focus-border: #777777;
+    --lang-dropdown-shadow: rgba(255, 255, 255, 0.1);
+    --lang-dropdown-hover-shadow: rgba(255, 255, 255, 0.15);
+    --lang-option-bg: #3a3a3a;
+    --lang-option-color: #e0e0e0;
+  }
+}
+
 .language-selector {
   position: absolute;
   right: 1rem;
@@ -6,10 +36,10 @@
 }
 
 .language-selector__dropdown {
-  background: #f8f9fa;
-  border: 2px solid #dee2e6;
+  background: var(--lang-dropdown-bg);
+  border: 2px solid var(--lang-dropdown-border);
   border-radius: 8px;
-  color: #333;
+  color: var(--lang-dropdown-color);
   padding: 10px 14px;
   font-size: 16px;
   font-weight: 500;
@@ -17,29 +47,28 @@
   transition: all 0.3s ease;
   outline: none;
   min-width: 140px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px var(--lang-dropdown-shadow);
 }
 
 .language-selector__dropdown:hover {
-  background: #e9ecef;
-  border-color: #adb5bd;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  background: var(--lang-dropdown-hover-bg);
+  border-color: var(--lang-dropdown-hover-border);
+  box-shadow: 0 4px 8px var(--lang-dropdown-hover-shadow);
 }
 
 .language-selector__dropdown:focus {
-  background: #e9ecef;
-  border-color: #6c757d;
+  background: var(--lang-dropdown-focus-bg);
+  border-color: var(--lang-dropdown-focus-border);
   box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
 }
 
 .language-selector__dropdown option {
-  background: #ffffff;
-  color: #333;
+  background: var(--lang-option-bg);
+  color: var(--lang-option-color);
   padding: 10px;
   font-size: 16px;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
   .language-selector {
     right: 0.5rem;

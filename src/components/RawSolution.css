@@ -135,7 +135,6 @@
   pointer-events: none;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .raw-solution {
     position: relative;

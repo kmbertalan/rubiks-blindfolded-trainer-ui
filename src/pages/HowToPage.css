@@ -1,3 +1,15 @@
+:root {
+  --howto-info-bg: white;
+  --howto-info-border: grey;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --howto-info-bg: #2d2d2d;
+    --howto-info-border: #555555;
+  }
+}
+
 .how-to-page {
   display: flex;
   flex-direction: row;
@@ -13,8 +25,8 @@
 }
 
 .how-to-page__info-box {
-  background: white;
-  border: 1px solid grey;
+  background: var(--howto-info-bg);
+  border: 1px solid var(--howto-info-border);
   border-radius: 1rem;
   padding: 0 0.5rem;
   margin-bottom: 0.5rem;
@@ -44,8 +56,8 @@
 }
 
 .how-to-page__bottom-info {
-  background: white;
-  border: 1px solid grey;
+  background: var(--howto-info-bg);
+  border: 1px solid var(--howto-info-border);
   border-radius: 1rem;
   padding: 0 0.5rem;
   margin-top: 0.5rem;
@@ -71,7 +83,6 @@
   border: 2px solid #ccc;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .how-to-page {
     flex-direction: column;
